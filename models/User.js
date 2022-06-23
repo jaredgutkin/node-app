@@ -14,8 +14,7 @@ const UserSchema = new mongoose.Schema({
         required: true
     },
     lastName: {
-        type: String,
-        required: true
+        type: String
     },
     image: {
         type: String
