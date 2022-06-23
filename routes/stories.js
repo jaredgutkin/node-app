@@ -25,7 +25,7 @@ router.post('/', ensureAuth, async (req, res)=> {
 
 //@desc SHow all stories
 //@route GET /stories/add
-router.get('/stories', ensureAuth, async (req,res) => {
+router.get('/', ensureAuth, async (req,res) => {
     try {
         const stories = await Story.find({ status: 'public'})
             .populate('user')
